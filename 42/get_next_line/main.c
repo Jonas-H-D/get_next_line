@@ -6,26 +6,27 @@
 /*   By: jhermon- <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:15:40 by jhermon-          #+#    #+#             */
-/*   Updated: 2021/11/23 14:17:43 by jhermon-         ###   ########.fr       */
+/*   Updated: 2021/11/25 12:42:39 by jhermon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdio.h>
+#include <fcntl.h>
 
-int main(void)
+int	main(void)
 {
 	char	*temp;
-	int	fd;
+	int		fd;
 
 	fd = open("test.txt", O_RDONLY);
-
-	while(1)
-	{
+//	while (1)
+//	{
 		temp = get_next_line(fd);
-		if (!temp)
-		break ;
-		printf("%s", temp);
+//		if (!temp)
+//			break ;
+//		printf("%s", temp);
 		free(temp);
-	}
+//	} 
 	return (0);
 }

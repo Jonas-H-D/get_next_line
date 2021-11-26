@@ -6,7 +6,7 @@
 /*   By: jhermon- <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:15:40 by jhermon-          #+#    #+#             */
-/*   Updated: 2021/11/25 12:42:39 by jhermon-         ###   ########.fr       */
+/*   Updated: 2021/11/26 14:38:06 by jhermon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ int	main(void)
 	int		fd;
 
 	fd = open("test.txt", O_RDONLY);
-//	while (1)
-//	{
+	while (1)
+	{
 		temp = get_next_line(fd);
-//		if (!temp)
-//			break ;
-//		printf("%s", temp);
+		if (!temp)
+			break ;
+		printf("main.c temp = %s", temp);
 		free(temp);
-//	} 
+	} 
 	return (0);
 }

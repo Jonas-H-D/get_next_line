@@ -6,7 +6,7 @@
 /*   By: jhermon- <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:15:40 by jhermon-          #+#    #+#             */
-/*   Updated: 2021/11/26 14:38:06 by jhermon-         ###   ########.fr       */
+/*   Updated: 2021/12/01 16:45:39 by jhermon-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	main(void)
 		temp = get_next_line(fd);
 		if (!temp)
 			break ;
-		printf("main.c temp = %s", temp);
+		printf("%s", temp);
 		free(temp);
 	} 
 	return (0);
